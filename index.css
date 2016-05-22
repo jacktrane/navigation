@@ -1,0 +1,70 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+section{
+  display: block;
+  height: 25%;
+  width: 50%;
+  background: rgba(86, 119, 140, 0.8);
+}
+ul{
+  list-style-type: none;
+  margin: auto 0px;
+  padding: 0px;
+  text-align: center;
+}
+a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  
+}
+
+a:before{
+  content: '┌';
+  -webkit-transform: translateX(20px);
+   -moz-transform: translateX(20px);
+   -ms-transform: translateX(20px);
+   -o-transform: translateX(20px);
+   transform: translateX(20px); 
+}
+a:after{
+  content: '┘';
+  -webkit-transform: translateX(-20px);
+   -moz-transform: translateX(-20px);
+   -ms-transform: translateX(-20px);
+   -o-transform: translateX(-20px);
+   transform: translateX(-20px);
+}
+a:before, a:after{
+  position: relative;
+  top: 0px; 
+  right: 0px;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s, top 0.2s, right 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s, top 0.2s, right 0.2s;
+  -ms-transition: -ms-transform 0.3s, opacity 0.2s, top 0.2s, right 0.2s;
+  -o-transition: -o-transform 0.3s, opacity 0.2s, top 0.2s, right 0.2s;
+  transition: transform 0.3s, opacity 0.2s, top 0.2s, right 0.2s;
+}
+a:hover::before{
+  top: -15px; 
+  right: 10px;
+}
+a:hover::after{
+  top: 15px; 
+  right: -10px;
+}
+a:hover::before,a:hover::after{
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+   -moz-transform: translateX(0px);
+   -ms-transform: translateX(0px);
+   -o-transform: translateX(0px);
+   transform: translateX(0px);
+}
