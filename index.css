@@ -85,9 +85,6 @@ a{
     top: 0px;
     left: -10px;
 }
-.nav-2 a:after{
-  
-}
 .nav-2 a:hover{
     opacity: 1;
 }
@@ -170,9 +167,6 @@ a{
     transition: all 0.2s;
 }
 
-.nav-4 a:before{
-    
-}
 
 .nav-4 a:hover{
     opacity: 1;
